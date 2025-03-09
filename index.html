@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Jornada - Transforme sua Vida</title>
+    <style>
+        body {
+            background-color: #02419a;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            text-align: center; /* Centraliza todo o texto dentro do contêiner */
+        }
+        h1 {
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+        h2 {
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        .subtitle {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+        .ebook-cover {
+            width: 90%;
+            max-width: 200px;
+            margin: 20px auto;
+            display: block;
+            border-radius: 10px;
+        }
+        .benefits, .testimonials {
+            text-align: left;text-align: left; /* Alinha o texto à esquerda dentro das listas */
+            margin: 20px 0;
+            display: inline-block; /* Garante que as listas sejam centralizadas */
+        }
+        .benefits li {
+            list-style: none;
+            padding: 5px 0;
+            font-size: 18px;
+        }
+        .highlight {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+        .countdown {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff4444;
+            margin: 10px 0;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #ffcc00;
+            color: #111;
+            padding: 15px 25px;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background-color: #ff9900;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>A Jornada</h1>
+        <p class="subtitle">Desenvolvimento Pessoal e Espiritual</p>
+        
+        <img src="https://github.com/melissacs02/aj/blob/main/imagen3d.ebook.png?raw=true" alt="Capa do eBook" class="ebook-cover">
+         <style="width: 50%; height: auto;">
+        
+        <p><strong>Você já tentou diversas vezes mudar seus hábitos, encontrar propósito e construir uma vida mais equilibrada, mas sempre acaba voltando ao mesmo ponto? Se sente cansado, sem energia e sem direção?!</strong></p>
+        <p>Se a resposta for sim, <span class="highlight">você não está sozinho. A maioria das pessoas passa anos vivendo no piloto automático, sem perceber que pequenas mudanças diárias podem transformar completamente a maneira como se sentem e encaram a vida.</span> Agora imagine um caminho claro e prático para mudar sua mente, corpo e espírito. Um guia verdadeiro, que te ensine não apenas o que fazer, mas como aplicar no seu dia a dia para alcançar uma vida mais plena e realizada..</p>
+
+        <a href= "https://pay.kiwify.com.br/pp5PGOq" class="cta-button">Comprar Agora</a>
+    </div>
+
+  <h2>📚 O Que Você Vai Aprender:</h2>
+        <ul class="benefits">
+            <li>✅ Técnicas para entender suas emoções.</li>
+            <li>✅ Superando crenças limitantes.</li>
+            <li>✅ Como criar metas alinhadas ao seu propósito.</li>
+            <li>✅ Alimentação e exercícios para bem-estar.</li>
+            <li>✅ Estratégias para um descanso reparador.</li>
+        </ul>
+         
+        <h2>💡 Você sabia? Pequenas ações diárias podem mudar completamente o rumo da sua vida. A diferença entre continuar perdido e tomar as rédeas do seu destino está em agir agora!<h2>
+      
+        <h2>🚀 Por Que Este E-Book É Para Você?</h2>
+        <ul class="benefits">
+            <li>✅ Quer melhorar sua qualidade de vida e bem-estar emocional.</li>
+            <li>✅ Busca mais propósito, clareza e equilíbrio.</li>
+            <li>✅ Deseja ferramentas práticas para aplicar no dia a dia.</li>
+        </ul>
+        
+        <h2>💬 O Que Estão Dizendo:</h2>
+        <div class="testimonials">
+            <p>"Esse E-Book mudou minha vida! Me ajudou a definir metas claras e segui-las." - <span class="highlight">Ana Souza</span></p>
+            <p>"Leitura inspiradora e prática. Recomendo a todos!" - <span class="highlight">João Lima</span></p>
+        </div>
+        
+        <h2>⚠️ Oferta por Tempo Limitado!</h2>
+        <p>Garanta seu E-Book antes que o desconto acabe:</p>
+        <div class="countdown" id="countdown">15:00</div>
+        <h2>💰 Oferta Especial: <span class="highlight">Somente Hoje!</span></h2>
+        <p><strong>De R$ 59,90 por apenas <span class="highlight">R$ 39,90!</span></strong></p>
+        
+        <a href= "https://pay.kiwify.com.br/pp5PGOq" class="cta-button">Comprar Agora</a>
+    </div>
+    
+    <script>
+        function startCountdown(durationInMinutes) {
+            let timeLeft = durationInMinutes * 60;
+            function updateCountdown() {
+                let minutes = Math.floor(timeLeft / 60);
+                let seconds = timeLeft % 60;
+                document.getElementById("countdown").textContent = (minutes < 10 ? "0" : "") + minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+                if (timeLeft > 0) {
+                    timeLeft--;
+                    setTimeout(updateCountdown, 1000);
+                } else {
+                    document.getElementById("countdown").textContent = "Oferta Expirada!";
+                }
+            }
+            updateCountdown();
+        }
+        startCountdown(15);
+    </script>
+</body>
+</html>
